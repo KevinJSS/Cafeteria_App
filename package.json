@@ -1,0 +1,23 @@
+{
+  "name": "cafeteria-app",
+  "version": "1.0.0",
+  "description": "A SASS & Gulp Project ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KevinJSS",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.21",
+    "sass": "^1.57.1"
+  },
+  "browsersList": [
+    "last 2 versions",
+    "> 1%"
+  ]
+}

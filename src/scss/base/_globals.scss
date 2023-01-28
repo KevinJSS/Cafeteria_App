@@ -1,0 +1,64 @@
+@use 'variables' as v;
+
+/* GLOBAL STYLES */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-size: v.$font-size-normal;
+    line-height: v.$line-height-normal;
+    font-family: v.$font-family-primary;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: v.$font-weight-black;
+    margin: 0 0 v.$spacing-medium 0;
+}
+
+h1 {
+    font-size: v.$h1-font-size;
+}
+
+h2 {
+    font-size: v.$h2-font-size;
+}
+
+h3 {
+    font-size: v.$h3-font-size;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+image {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    color: v.$dark-color;
+    font-size: v.$font-size-medium;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}

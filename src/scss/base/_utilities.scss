@@ -1,0 +1,10 @@
+@use 'variables' as v;
+
+/* UTITLITIES */
+.text-center {
+    text-align: center;
+}
+
+.bg-primary {
+    background-color: v.$primary-color;
+}
