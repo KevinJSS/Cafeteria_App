@@ -21,15 +21,23 @@ function compileCSS( done ) {
     done();
 }
 
+function processImages( done ) {
+    //Image processing task
+    src('src/images/**/*')
+        .pipe( dest('build/images') );
+    done();
+} 
+
 function watchFileChanges() {
     //Watch for file changes
     watch( 'src/scss/**/*.scss', compileCSS ); //<-- all the .scss files in the folder
-    watch( 'src/scss/app.scss', compileCSS );
+    watch( 'src/images/**/*', processImages );
 }
 
 exports.compileCSS = compileCSS;
+exports.processImages = processImages;
 exports.watchFileChanges = watchFileChanges;
-exports.default = series( compileCSS, watchFileChanges );
+exports.default = series( processImages, compileCSS, watchFileChanges );
 
 // Default taks --> Just run gulp in the terminal to the tasks you've specified
 // Series --> Run the tasks in order
