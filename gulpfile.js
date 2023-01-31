@@ -1,7 +1,12 @@
 const { src, dest, watch, series } = require('gulp');
+
+// CSS & SASS Compilation
 const sass = require('gulp-sass')(require('sass')); //All in sass function
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
+
+// Image Processing
+const imagemin = require('gulp-imagemin');
 
 function compileCSS( done ) {
 
@@ -24,6 +29,7 @@ function compileCSS( done ) {
 function processImages( done ) {
     //Image processing task
     src('src/images/**/*')
+        .pipe( imagemin({ optimizationLevel: 3 }) )
         .pipe( dest('build/images') );
     done();
 } 
