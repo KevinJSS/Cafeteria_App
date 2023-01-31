@@ -76,7 +76,7 @@ exports.processImages = processImages;
 exports.webpConversion = webpConversion;
 exports.avifConversion = avifConversion;
 exports.watchFileChanges = watchFileChanges;
-exports.default = series( processImages, webpConversion, avifConversion, compileCSS, watchFileChanges );
+exports.default = series( /*processImages, webpConversion, avifConversion,*/ compileCSS, watchFileChanges );
 
 // Default taks --> Just run gulp in the terminal to the tasks you've specified
 // Series --> Run the tasks in order

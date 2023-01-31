@@ -8,3 +8,9 @@
 .bg-primary {
     background-color: v.$primary-color;
 }
+
+.container {
+    max-width: 110rem;
+    margin: 0 auto;
+    width: 95%;
+}
