@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use 'mixins' as m;
 
 /* GLOBAL STYLES */
 html {
@@ -18,14 +19,17 @@ body {
     font-size: v.$font-size-normal;
     line-height: v.$line-height-normal;
     font-family: v.$font-family-primary;
+    background-color: v.$light-brown;
 }
 
 h1,
 h2,
 h3 {
-    font-weight: v.$font-weight-black;
-    line-height: v.$line-height-heading;
+    font-weight: v.$font-weight-bold;
+    line-height: v.$line-height-normal;
+    font-family: v.$font-family-secondary;
     margin: 0 0 v.$spacing-medium 0;
+    text-transform: uppercase;
 }
 
 h1 {
@@ -33,7 +37,29 @@ h1 {
 }
 
 h2 {
+    color: v.$primary-color;
     font-size: v.$h2-font-size;
+    margin-bottom: 2rem;
+
+    span {
+        display: block;
+        font-size: v.$font-size-normal;
+        color: v.$secondary-color;
+    }
+
+    @include m.tablet {
+        font-size: calc(v.$h2-font-size + .8rem);
+    }
+
+    &::after {
+        content: '';
+        width: 10rem;
+        height: 10rem;
+        display: block;
+        margin: 0 auto;
+        background-image: url('../images/cafe.svg');
+        background-size: 10rem;
+    }
 }
 
 h3 {
@@ -57,5 +83,6 @@ img {
 
 p {
     color: v.$dark-color;
-    font-size: v.$font-size-medium;
+    font-size: v.$font-size-normal;
+    line-height: v.$line-height-medium;
 }

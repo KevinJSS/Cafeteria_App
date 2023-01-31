@@ -7,14 +7,14 @@
     position: relative;
 
     @include m.tablet {
-        min-height: 65rem;    
+        min-height: 70rem;    
     }
 
     &::before {
         content:'';
         position: absolute;
         background-color: v.$dark-color;
-        opacity: 0.5;
+        opacity: 0.6;
         top: 0;
         left: 0;
         right: 0;
@@ -26,16 +26,18 @@
 
         h1 {
             text-align: center;
+            font-size: 2.2rem;
             color: v.$light-color;
+            font-weight: v.$font-weight-bold;
             text-transform: uppercase;
             margin: calc(v.$spacing-medium + 1rem) 0 0 0;
-
+            padding: 0 2rem;
         }
 
         @include m.tablet {
             h1 {
                 font-size: calc(v.$h1-font-size + 1rem);
-                margin: v.$spacing-large 0;
+                margin: 10rem 0;
             }
         }
     }

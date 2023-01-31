@@ -1,0 +1,36 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.main-content {
+    background-color: v.$light-color;
+    padding: calc(v.$spacing-normal + 2rem) v.$spacing-normal;
+
+    @include m.tablet {
+        padding: v.$spacing-large;
+        margin-top: -10rem;
+        position: relative;
+    }
+}
+
+.icons {
+    margin-top: v.$spacing-medium;
+
+    .icon-list {
+        @include m.tablet {
+            @include m.grid(3, v.$spacing-normal);
+        }
+
+        li {
+            img {
+                width: 12rem;
+                margin: 0 auto;
+            }
+            p {
+                font-family: v.$font-family-tertiary;
+                color: v.$primary-color;
+                font-size: 3.8rem;
+                margin: 3.2rem 0;
+            }
+        }
+    }
+}

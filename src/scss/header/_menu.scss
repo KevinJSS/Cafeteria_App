@@ -4,8 +4,7 @@
 .menu {
     display: flex;
     flex-direction: column;
-    gap: v.$spacing-normal;
-    margin-top: v.$spacing-medium;
+    margin-top: v.$spacing-normal;
 
     a {
         text-align: center;
@@ -13,6 +12,7 @@
         font-size: v.$font-size-medium;
         font-weight: v.$font-weight-bold;
         text-transform: uppercase;
+        margin-bottom: 1rem;
 
         &:hover {
             color: v.$secondary-color;
@@ -26,5 +26,13 @@
     @include m.tablet { 
         flex-direction: row;
         margin-top: 0;
+
+        a {
+            margin: 0 .7rem;
+        }
+
+        a:last-child {
+            margin-right: 0;
+        }
     }
 }
