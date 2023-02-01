@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería SASS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../build/css/app.css">
+</head>
+<body>
+    <header class="header header-about">
+        <div class="header-content container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../build/images/logo.svg" alt="Logotipo">
+                </div>
+
+                <nav class="links">
+                    <a href="index.html">Inicio</a>
+                    <a href="about.html" class="active">Nosotros</a>
+                    <a href="process.html">Proceso</a>
+                    <a href="menu.html">Menú</a>
+                    <a href="gallery.html">Galería</a>
+                    <a href="contact.html">Contacto</a>
+                </nav>
+            </div>
+
+            <div class="header__text">
+                <h1 class="header__heading">Una hermosa experiencia cada día</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content negative-margin-10 bg-light border-top-radius">
+        <h2><span>Conoce más</span> sobre nosotros</h2>
+
+        <div class="about-content">
+            <div class="about-image">
+                <picture>
+                    <source
+                        srcset="../build/images/nosotros_sidebar.avif" 
+                        type="image/avif">
+                    <source
+                        srcset="../build/images/nosotros_sidebar.webp" 
+                        type="image/webp">
+                    <source
+                        srcset="../build/images/nosotros_sidebar.jpg" 
+                        type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="../build/images/nosotros_sidebar.jpg" lazyalt="imagen" width="500" height="300">
+                </picture>
+            </div>
+
+            <div class="about-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusamus pariatur magni blanditiis qui a iusto voluptas, porro quas ex necessitatibus totam, reiciendis voluptatibus perferendis!</p>
+
+                <blockquote>¡Excelente sabor!</blockquote>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusamus pariatur magni blanditiis qui a iusto voluptas, porro quas ex necessitatibus totam, reiciendis voluptatibus perferendis!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container bg-light border-bottom-radius">
+            <div class="footer-box location">
+                <h3>Ubicación</h3>
+                <p>Naranjo 20601</p>
+                <p>Alajuela, Costa Rica</p>
+            </div>
+
+            <div class="footer-box booking">
+                <h3>Reservación</h3>
+                <p>Llamar al</p>
+                <p>6080-1001</p>
+            </div>
+
+            <div class="footer-box schedule">
+                <h3>Horario</h3>
+                <p>Lun-Sab: 9:00 - 19:00</p>
+                <p>Domingo: Cerrado</p>
+            </div>
+        </div>
+
+        <p class="copyright text-center">Todos los derechos reservados. La Cafetería</p>
+    </footer>
+</body>
+</html>

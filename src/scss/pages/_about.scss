@@ -1,0 +1,43 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.about-content {
+    margin-top: v.$spacing-medium;
+    margin-bottom: -2rem;
+
+    @include m.desktop {
+        @include m.grid(2, 2rem);
+        align-items: center;
+    }
+
+    .about-image {
+        max-width: 50rem;
+        margin: 0 auto v.$spacing-medium auto;
+
+        @include m.desktop {
+            max-width: unset;
+            margin-bottom: 0;
+            margin-right: 1rem;
+        }
+        
+        img {
+            transform: rotate(-4.2deg);
+            -webkit-transform: rotate(-4.2deg);
+            -moz-transform: rotate(-4.2deg);
+            -ms-transform: rotate(-4.2deg);
+            -o-transform: rotate(-4.2deg);
+            border: 2.5rem solid v.$light-color;
+            box-shadow: v.$box-shadow;
+        }
+    }
+
+    .about-text {
+        padding: 1rem 2rem;
+        blockquote {
+            padding: 1rem;
+            margin: 1rem 0;
+            font-size: v.$font-size-medium;
+            border-left: 5px solid v.$primary-color;
+        }
+    }
+}
