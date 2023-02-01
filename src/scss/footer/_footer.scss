@@ -2,9 +2,12 @@
 @use 'base/mixins' as m;
 
 /* FOOTER */
+.footer {
+    background-color: v.$primary-color;
+}
+
 .footer-content {
     padding: v.$spacing-medium v.$spacing-normal;
-    background-color: v.$light-color;
     position: relative;
 
     @include m.tablet {
@@ -35,12 +38,7 @@
 }
 
 .copyright {
-    background-color: v.$primary-color;
-    padding: 25rem 2.5rem 2.5rem 2.5rem;
-    margin-top: -22.5rem;
-
-    p {
-        font-size: 1.6rem;
-        color: v.$light-color;
-    }
+    padding: v.$spacing-normal;
+    font-size: 1.6rem;
+    color: v.$light-color;
 }

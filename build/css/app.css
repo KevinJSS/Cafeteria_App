@@ -522,9 +522,12 @@ p {
 }
 
 /* FOOTER */
+.footer {
+  background-color: #5E311E;
+}
+
 .footer-content {
   padding: 5rem 2.5rem;
-  background-color: #FFF;
   position: relative;
 }
 @media (min-width: 768px) {
@@ -557,11 +560,7 @@ p {
 }
 
 .copyright {
-  background-color: #5E311E;
-  padding: 25rem 2.5rem 2.5rem 2.5rem;
-  margin-top: -22.5rem;
-}
-.copyright p {
+  padding: 2.5rem;
   font-size: 1.6rem;
   color: #FFF;
 }
