@@ -20,10 +20,10 @@ function compileCSS( done ) {
     //.pipe() <-- next step
     //sass({ outputStyle: 'compressed' }) <-- minify the .css file
 
-    src('src/scss/app.scss')
+    src('../scss/app.scss')
         .pipe( sass() )
         .pipe( postcss([ autoprefixer() ]) )
-        .pipe( dest('build/css') );
+        .pipe( dest('../../build/css') );
 
     done();
 }
@@ -35,9 +35,9 @@ function processImages( done ) {
     //2. Optimize the images
     //3. Save the files
 
-    src('src/images/**/*')
+    src('../images/**/*')
         .pipe( imagemin({ optimizationLevel: 3 }) )
-        .pipe( dest('build/images') );
+        .pipe( dest('../../build/images') );
     done();
 } 
 
@@ -48,9 +48,9 @@ function webpConversion( ) {
     //2. Convert the images to webp
     //3. Save the files
 
-    return src('src/images/**/*.{png,jpg}')
+    return src('../images/**/*.{png,jpg}')
         .pipe( webp({ quality: 50 }) )
-        .pipe( dest('build/images') );
+        .pipe( dest('../../build/images') );
 }
 
 function avifConversion() {
@@ -60,23 +60,23 @@ function avifConversion() {
         //2. Convert the images to avif
         //3. Save the files
     
-        return src('src/images/**/*.{png,jpg}')
+        return src('../images/**/*.{png,jpg}')
             .pipe( avif({ quality: 50 }) )
-            .pipe( dest('build/images') );
+            .pipe( dest('../../build/images') );
 }
 
-function watchFileChanges() {
+function dev() {
     //Watch for files changes
-    watch( 'src/scss/**/*.scss', compileCSS ); //<-- all the .scss files in the folder
-    watch( 'src/images/**/*', processImages );
+    watch( '../scss/**/*.scss', compileCSS ); //<-- all the .scss files in the folder
+    watch( '../images/**/*', processImages );
 }
 
 exports.compileCSS = compileCSS;
 exports.processImages = processImages;
 exports.webpConversion = webpConversion;
 exports.avifConversion = avifConversion;
-exports.watchFileChanges = watchFileChanges;
-exports.default = series( /*processImages, webpConversion, avifConversion,*/ compileCSS, watchFileChanges );
+exports.dev = dev;
+exports.default = series( processImages, webpConversion, avifConversion, compileCSS, dev );
 
 // Default taks --> Just run gulp in the terminal to the tasks you've specified
 // Series --> Run the tasks in order

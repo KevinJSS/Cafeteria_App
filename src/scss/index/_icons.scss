@@ -1,0 +1,26 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/* ICONS */
+.icons {
+    margin-top: v.$spacing-medium;
+
+    .icon-list {
+        @include m.tablet {
+            @include m.grid(3, v.$spacing-normal);
+        }
+
+        li {
+            img {
+                width: 12rem;
+                margin: 0 auto;
+            }
+            p {
+                font-family: v.$font-family-tertiary;
+                color: v.$primary-color;
+                font-size: 3.8rem;
+                margin: 3.2rem 0;
+            }
+        }
+    }
+}
