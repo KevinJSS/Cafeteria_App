@@ -17,11 +17,7 @@
 }
 
 .footer-box {
-    margin-bottom: 5rem;
-
-    @include m.tablet {
-        margin-bottom: 0;
-    }
+    margin-bottom: v.$spacing-medium;
 
     h3 {
         color: v.$secondary-color;

@@ -542,11 +542,6 @@ p {
 .footer-box {
   margin-bottom: 5rem;
 }
-@media (min-width: 768px) {
-  .footer-box {
-    margin-bottom: 0;
-  }
-}
 .footer-box h3 {
   color: #C39C63;
   font-family: "Bona Nova", serif;
