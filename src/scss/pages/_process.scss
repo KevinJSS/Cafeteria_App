@@ -1,0 +1,59 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/* PROCESS VIEW */
+.process-card {
+    margin-bottom: v.$spacing-medium; 
+
+    @include m.tablet {
+        display: flex;
+        align-items: center;
+    }
+
+    .card-image,
+    .card-text {
+        flex: 1;
+    }
+
+    @include m.tablet {
+        .card-image {
+            margin-right: 3rem;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+
+    @include m.tablet {
+        &:nth-child(even) {
+            .card-text {
+                order: -1;
+            }
+
+            .card-image {
+                margin-right: 0;
+                margin-left: 3rem;
+            }
+        }
+    }
+
+    .card-text {
+        h3 {
+            color: v.$primary-color;
+            font-size: v.$h2-font-size;
+            margin: 2rem 0;
+            text-align: left;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 160px;
+                height: 3px;
+                background-color: v.$secondary-color;
+            }
+        }
+    }
+}

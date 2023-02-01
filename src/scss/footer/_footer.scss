@@ -7,12 +7,13 @@
 }
 
 .footer-content {
-    padding: v.$spacing-medium v.$spacing-normal;
+    padding: 2rem 2.5rem 5rem 2.5rem;
     position: relative;
 
     @include m.tablet {
         display: grid;
         @include m.grid(3, 2rem);
+        padding: v.$spacing-medium v.$spacing-normal;
     }
 }
 

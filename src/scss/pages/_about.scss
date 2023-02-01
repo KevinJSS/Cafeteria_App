@@ -1,9 +1,9 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
+/* ABOUT US VIEW */
 .about-content {
     margin-top: v.$spacing-medium;
-    margin-bottom: -2rem;
 
     @include m.desktop {
         @include m.grid(2, 2rem);
