@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería SASS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../build/css/app.css">
+</head>
+<body>
+    <header class="header header-contact">
+        <div class="header-content container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../build/images/logo.svg" alt="Logotipo">
+                </div>
+
+                <nav class="links">
+                    <a href="index.html">Inicio</a>
+                    <a href="about.html">Nosotros</a>
+                    <a href="process.html">Proceso</a>
+                    <a href="menu.html">Menú</a>
+                    <a href="gallery.html">Galería</a>
+                    <a href="contact.html" class="active">Contacto</a>
+                </nav>
+            </div>
+
+            <div class="header__text">
+                <h1 class="header__heading">Mejores granos, mejor café</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content negative-margin-10 bg-light border-top-radius">
+        <h2><span>Reserva tu</span>mesa</h2>
+
+        <div class="contact-content">
+            <form class="form">
+                <div class="input">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Tu nombre">
+                </div>
+
+                <div class="input">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email" placeholder="Tu correo electrónico">
+                </div>
+
+                <div class="input">
+                    <label for="people">Número de personas</label>
+                    <select name="people" id="people">
+                        <option value="0" selected disabled>-- Seleccione una opción --</option>
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                        <option value="3">3 personas</option>
+                        <option value="4">4 personas</option>
+                        <option value="more">Más de 4 personas</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <label for="time">Hora</label>
+                    <input type="time" name="time" id="time" min="09:00" max="19:00">
+                </div>
+
+                <div class="input">
+                    <label for="date">Fecha</label>
+                    <input type="date" name="date" id="date">
+                </div>
+
+                <div class="input">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container bg-light border-bottom-radius">
+            <div class="footer-box location">
+                <h3>Ubicación</h3>
+                <p>Naranjo 20601</p>
+                <p>Alajuela, Costa Rica</p>
+            </div>
+
+            <div class="footer-box booking">
+                <h3>Reservación</h3>
+                <p>Llamar al</p>
+                <p>6080-1001</p>
+            </div>
+
+            <div class="footer-box schedule">
+                <h3>Horario</h3>
+                <p>Lun-Sab: 9:00 - 19:00</p>
+                <p>Domingo: Cerrado</p>
+            </div>
+        </div>
+
+        <p class="copyright text-center">Todos los derechos reservados. La Cafetería</p>
+    </footer>
+</body>
+</html>

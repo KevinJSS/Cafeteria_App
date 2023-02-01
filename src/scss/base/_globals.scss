@@ -93,6 +93,13 @@ p {
     line-height: v.$line-height-medium;
 }
 
+label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: v.$font-weight-bold;
+    font-size: 2rem;
+}
+
 .container {
     max-width: 120rem;
     margin: 0 auto;
