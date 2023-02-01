@@ -3,12 +3,9 @@
 
 /* MAIN SECTION */
 .main-content {
-    background-color: v.$light-color;
     padding: v.$spacing-medium v.$spacing-normal;
 
     @include m.tablet {
         padding: v.$spacing-large;
-        margin-top: -10rem;
-        position: relative;
     }
 }

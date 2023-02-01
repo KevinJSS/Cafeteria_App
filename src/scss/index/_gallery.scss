@@ -5,6 +5,7 @@
 .gallery-content {
     margin-top: v.$spacing-medium;
 }
+
 .gallery {
     @include m.grid(2, 2rem);
 
