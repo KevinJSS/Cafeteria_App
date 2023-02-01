@@ -15,7 +15,20 @@
 }
 
 .negative-margin-10 {
-    padding: 10rem 2.5rem 5rem 2.5rem;
+    padding: 5rem 2.5rem;
+    @include m.tablet {
+        padding-top: 10rem;
+    }
     margin-top: -10rem;
     position: relative;
+}
+
+.border-top-radius {
+    border-top-left-radius: v.$border-radius-medium;
+    border-top-right-radius: v.$border-radius-medium;
+}
+
+.border-bottom-radius {
+    border-bottom-left-radius: v.$border-radius-medium;
+    border-bottom-right-radius: v.$border-radius-medium;
 }
