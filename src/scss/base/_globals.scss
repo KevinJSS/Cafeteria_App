@@ -29,6 +29,7 @@ h3 {
     line-height: v.$line-height-normal;
     font-family: v.$font-family-secondary;
     margin: 0 0 v.$spacing-medium 0;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -61,6 +62,19 @@ h2 {
         background-size: 10rem;
     }
 }
+
+// .light-heading {
+//     @extend h2;
+//     color: v.$light-color;
+
+//     span {
+//         color: v.$light-color;
+//     }
+    
+//     &::after {
+//         display: none;
+//     }
+// }
 
 h3 {
     font-size: v.$h3-font-size;

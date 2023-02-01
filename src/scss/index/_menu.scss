@@ -1,0 +1,85 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/* MENU */
+.menu {
+    padding: 13rem 2.5rem 20rem 2.5rem;
+    background-image: url('/build/images/menu_arriba.svg'), url('/build/images/menu_abajo.svg'), linear-gradient(to top, v.$primary-color, v.$primary-color);
+    background-position: center 3.5rem, center 98%, 100%;
+    background-repeat: no-repeat;
+    background-size: 200%;
+
+    @include m.tablet {
+        background-position: center 3.5rem, center 93%, 100%;
+        padding: 15rem 0 23rem 0;
+        background-size: 100%;
+    }
+
+    @include m.desktop {
+        background-size: 50%, 50%, 100%;
+    }
+
+    h2 {
+        color: v.$light-color;
+        span {
+            color: v.$light-color;
+        }
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.menu-content {
+    @include m.tablet {
+        @include m.grid(2, 2rem);
+    }
+}
+
+.menu-column {
+    @include m.tablet {
+        margin-right: 1rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    h3 {
+        color: v.$light-color;
+        font-size: 3.2rem;
+
+        &:last-of-type {
+            margin-top: 5rem;
+        }
+
+        @include m.tablet {
+            &:last-of-type {
+                margin-top: 0;
+            }
+        }
+    }
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            color: v.$light-color;
+            font-size: 2.2rem;
+            line-height: v.$line-height-normal;
+            margin-bottom: v.$spacing-normal;
+
+            span {
+                display: block;
+                color: v.$secondary-color;
+            }
+        }
+
+        .precio {
+            font-weight: v.$font-weight-bold;
+            font-size: v.$font-size-large;
+        }
+    }
+}
