@@ -395,6 +395,12 @@ p {
   line-height: 2;
 }
 
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 95%;
+}
+
 /* UTITLITIES */
 .text-center {
   text-align: center;
@@ -406,12 +412,6 @@ p {
 
 .bg-light {
   background-color: #FFF;
-}
-
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
-  width: 95%;
 }
 
 .negative-margin-10 {
@@ -519,6 +519,51 @@ p {
   .links a:last-child {
     margin-right: 0;
   }
+}
+
+/* FOOTER */
+.footer-content {
+  padding: 5rem 2.5rem;
+  background-color: #FFF;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .footer-content {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.footer-box {
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .footer-box {
+    margin-bottom: 0;
+  }
+}
+.footer-box h3 {
+  color: #C39C63;
+  font-family: "Bona Nova", serif;
+  margin-bottom: 1rem;
+}
+.footer-box p {
+  font-family: "Bona Nova", serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.copyright {
+  background-color: #5E311E;
+  padding: 25rem 2.5rem 2.5rem 2.5rem;
+  margin-top: -22.5rem;
+}
+.copyright p {
+  font-size: 1.6rem;
+  color: #FFF;
 }
 
 /* MAIN SECTION */
@@ -728,49 +773,4 @@ p {
   color: #5E311E;
   margin-top: 2rem;
   text-align: right;
-}
-
-/* FOOTER */
-.footer-content {
-  padding: 5rem 2.5rem;
-  background-color: #FFF;
-  position: relative;
-}
-@media (min-width: 768px) {
-  .footer-content {
-    display: grid;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-}
-
-.footer-box {
-  margin-bottom: 5rem;
-}
-@media (min-width: 768px) {
-  .footer-box {
-    margin-bottom: 0;
-  }
-}
-.footer-box h3 {
-  color: #C39C63;
-  font-family: "Bona Nova", serif;
-  margin-bottom: 1rem;
-}
-.footer-box p {
-  font-family: "Bona Nova", serif;
-  font-size: 2rem;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.copyright {
-  background-color: #5E311E;
-  padding: 25rem 2.5rem 2.5rem 2.5rem;
-  margin-top: -22.5rem;
-}
-.copyright p {
-  font-size: 1.6rem;
-  color: #FFF;
 }

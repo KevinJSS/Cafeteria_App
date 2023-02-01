@@ -64,16 +64,7 @@ h2 {
 }
 
 // .light-heading {
-//     @extend h2;
-//     color: v.$light-color;
-
-//     span {
-//         color: v.$light-color;
-//     }
-    
-//     &::after {
-//         display: none;
-//     }
+//     @extend h2; //<-- Inherits the styles of the h2 tag
 // }
 
 h3 {
@@ -100,4 +91,10 @@ p {
     color: v.$dark-color;
     font-size: v.$font-size-normal;
     line-height: v.$line-height-medium;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
 }
