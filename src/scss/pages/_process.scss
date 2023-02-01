@@ -29,9 +29,7 @@
 
     @include m.tablet {
         &:nth-child(even) {
-            .card-text {
-                order: -1;
-            }
+            flex-direction: row-reverse;
 
             .card-image {
                 margin-right: 0;

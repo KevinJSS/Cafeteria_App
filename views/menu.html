@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería SASS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../build/css/app.css">
+</head>
+<body>
+    <header class="header header-menu">
+        <div class="header-content container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../build/images/logo.svg" alt="Logotipo">
+                </div>
+
+                <nav class="links">
+                    <a href="index.html">Inicio</a>
+                    <a href="about.html">Nosotros</a>
+                    <a href="process.html">Proceso</a>
+                    <a href="menu.html" class="active">Menú</a>
+                    <a href="gallery.html">Galería</a>
+                    <a href="contact.html">Contacto</a>
+                </nav>
+            </div>
+
+            <div class="header__text">
+                <h1 class="header__heading">Disfruta de nuestro delicioso menú</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content text-center negative-margin-10 bg-light border-top-radius padding-bottom-0">
+        <h2><span>Utilizamos los mejores</span>ingredientes</h2>
+
+        <div class="menu-info">
+            <div class="menu-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, reprehenderit ipsam ad a incidunt similique veritatis consectetur expedita cumque assumenda inventore ipsa, error cum sapiente facilis sit asperiores laudantium nobis! Consectetur expedita cumque assumenda inventore ipsa, error cum sapiente facilis sit asperiores laudantium nobis!</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="menu">
+        <h2 class="light-heading"><span>Nuestro delicioso</span>menú</h2>
+
+        <div class="menu-content container">
+            <section class="coffee-menu menu-column">
+                <h3>Café</h3>
+
+                <ul>
+                    <li>
+                        <p>Café Latte <span>Café Espresso con leche caliente evaporada</span> </p>
+                        <p class="precio">$25</p>
+                    </li>
+                    <li>
+                        <p>Café Mocha <span>Espresso con crema batida</span> </p>
+                        <p class="precio">$30</p>
+                    </li>
+                    <li>
+                        <p>Café Americano <span>Café Negro</span> </p>
+                        <p class="precio">$30</p>
+                    </li>
+                    <li>
+                        <p>Capuccino<span>Espresso con una capa suave de espuma</span> </p>
+                        <p class="precio">$25</p>
+                    </li>
+                    <li>
+                        <p>Café Mocha Frio<span>Espresso, dulce con mocha y leche.</span> </p>
+                        <p class="precio">$29</p>
+                    </li>
+                    <li>
+                        <p>Mocha Frio Quemado<span>Espresso, hielo, con azucar quemada y mantequilla.</span> </p>
+                        <p class="precio">$35</p>
+                    </li>
+                    <li>
+                        <p>Latte con Caramelo<span>Espresso, leche y caramelo.</span> </p>
+                        <p class="precio">$39</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="food-menu menu-column">
+                <h3>Comida</h3>
+
+                <ul>
+                    <li>
+                        <p>Baguette de Pollo <span>Delicioso Baguette con pollo a la plancha</span> </p>
+                        <p class="precio">$45</p>
+                    </li>
+                    <li>
+                        <p>Baguette Pollo y Queso <span>Baguette combinado con Pollo y Queso Manchego</span> </p>
+                        <p class="precio">$50</p>
+                    </li>
+                    <li>
+                        <p>Baguette con Tocino<span>Baguette con especias y verduras, además de tocino</span> </p>
+                        <p class="precio">$50</p>
+                    </li>
+                    <li>
+                        <p>Baguette de Jamón<span>Delicioso Baguette con Jamón y Especias</span> </p>
+                        <p class="precio">$65</p>
+                    </li>
+                    <li>
+                        <p>Baguette con Jamón, Queso y Tocino<span>El especial de la casa</span> </p>
+                        <p class="precio">$69</p>
+                    </li>
+                    <li>
+                        <p>Sandwich de Pollo<span>Delicioso sandwich con Pollo y especies</span> </p>
+                        <p class="precio">$65</p>
+                    </li>
+                    <li>
+                        <p>Sandwich de Jamón y queso<span>Queso Amarillo con Jamón y Queso</span> </p>
+                        <p class="precio">$59</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container bg-light border-bottom-radius border-top-radius py-5">
+            <div class="footer-box location m-0">
+                <h3>Ubicación</h3>
+                <p>Naranjo 20601</p>
+                <p>Alajuela, Costa Rica</p>
+            </div>
+
+            <div class="footer-box booking m-0">
+                <h3>Reservación</h3>
+                <p>Llamar al</p>
+                <p>6080-1001</p>
+            </div>
+
+            <div class="footer-box schedule m-0">
+                <h3>Horario</h3>
+                <p>Lun-Sab: 9:00 - 19:00</p>
+                <p>Domingo: Cerrado</p>
+            </div>
+        </div>
+
+        <p class="copyright text-center">Todos los derechos reservados. La Cafetería</p>
+    </footer>
+</body>
+</html>

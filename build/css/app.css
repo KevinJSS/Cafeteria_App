@@ -402,45 +402,12 @@ p {
   width: 95%;
 }
 
-/* UTITLITIES */
-.text-center {
-  text-align: center;
-}
-
-.bg-primary {
-  background-color: #5E311E;
-}
-
-.bg-light {
-  background-color: #FFF;
-}
-
-.negative-margin-10 {
-  padding: 5rem 2.5rem;
-  margin-top: -10rem;
-  position: relative;
-}
-@media (min-width: 768px) {
-  .negative-margin-10 {
-    padding-top: 10rem;
-  }
-}
-
-.border-top-radius {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-
-.border-bottom-radius {
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-
 /* HEADER SECTION */
 .header {
   padding: 5rem 0;
   position: relative;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
@@ -711,6 +678,7 @@ p {
   background-position: center 3.5rem, center 98%, 100%;
   background-repeat: no-repeat;
   background-size: 200%;
+  position: relative;
 }
 @media (min-width: 768px) {
   .menu {
@@ -875,8 +843,8 @@ p {
   }
 }
 @media (min-width: 768px) {
-  .process-card:nth-child(even) .card-text {
-    order: -1;
+  .process-card:nth-child(even) {
+    flex-direction: row-reverse;
   }
   .process-card:nth-child(even) .card-image {
     margin-right: 0;
@@ -895,4 +863,82 @@ p {
   width: 160px;
   height: 3px;
   background-color: #C39C63;
+}
+
+.menu-info {
+  background-image: url("../images/cafe.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  aspect-ratio: 3/4.5;
+}
+@media (min-width: 768px) {
+  .menu-info {
+    aspect-ratio: 10/12;
+  }
+}
+@media (min-width: 992px) {
+  .menu-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    aspect-ratio: 16/6;
+    background-size: 45%;
+    background-position: bottom right;
+  }
+}
+@media (min-width: 992px) {
+  .menu-info .menu-text {
+    text-align: left;
+  }
+  .menu-info .menu-text p {
+    font-size: 2rem;
+  }
+}
+
+/* UTITLITIES */
+.py-5 {
+  padding: 5rem 0;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: #5E311E;
+}
+
+.bg-light {
+  background-color: #FFF;
+}
+
+.negative-margin-10 {
+  padding: 8rem 2.5rem;
+  margin-top: -10rem;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .negative-margin-10 {
+    padding: 10rem 8rem;
+  }
+}
+
+.border-top-radius {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.border-bottom-radius {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0;
+  margin-bottom: -1px;
 }
