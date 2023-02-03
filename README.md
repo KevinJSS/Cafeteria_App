@@ -17,23 +17,19 @@
 
 ## BUILT WITH
 <br/>
-
 <div align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="80" height="80"/>
-  <span>&nbsp;&nbsp;</span>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg" alt="gulp" width="80" height="80"/>
-  <span>&nbsp;&nbsp;</span>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="80" height="80"/>
-</div>
-
-<br/>
-
-<div align="center">
-  <strong>HTML5</strong>
-  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-  <strong>Gulp.js</strong>
-  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-  <strong>SASS</strong>
+  <table>
+    <tr>
+      <th><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="80" height="80"/></th>
+      <th><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg" alt="gulp" width="80" height="80"/></th>
+      <th><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="80" height="80"/></th>
+    </tr>
+    <tr align="center">
+      <td><strong>HTML5</strong></td>
+      <td><strong>Gulp.js</strong></td>
+      <td><strong>SASS</strong></td>
+    </tr>
+  </table>  
 </div>
 
 ## DEVELOPERS
