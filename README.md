@@ -43,7 +43,7 @@ Before you begin, make sure you have met the following requirements:
 * <a href="https://gulpjs.com/docs/en/getting-started/quick-start/" target="_blank">Gulp-CLI</a> must be installed on your operating system.
 
 ## INSTALLATION
-To install <strong>Cafeteria_App</strong>, follow these steps:
+To try <strong>Cafeteria_App</strong>, follow these steps:
 
 Linux and macOS:
 ```
