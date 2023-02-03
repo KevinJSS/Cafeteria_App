@@ -34,6 +34,33 @@
     <strong>SASS</strong>
 </div>
 
+## PREREQUISITES
+Before you begin, make sure you have met the following requirements:
+* <a href="https://git-scm.com/downloads" target="_blank">Git</a> must be installed on your operating system.
+* <a href="https://nodejs.org/en/" target="_blank">Node.js (npm & npx)</a> must be installed on your operating system.
+* <a href="https://gulpjs.com/docs/en/getting-started/quick-start/" target="_blank">Gulp-CLI</a> must be installed on your operating system.
+
+## INSTALLATION
+To install <strong>Cafeteria_App</strong>, follow these steps:
+
+Linux and macOS:
+```
+$ sudo git clone git@github.com:KevinJSS/Cafeteria_App.git
+
+$ npm install
+
+$ gulp
+```
+
+Windows:
+```
+git clone git@github.com:KevinJSS/Nucleus-eWallet.git
+
+npm install
+
+gulp
+```
+
 ## DEVELOPERS
 * Kevin Alvarado
 * <a href="https://github.com/codigoconjuan">Juan Pablo de la Torre's</a> "CSS The Complete Guide" course.
