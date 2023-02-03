@@ -30,9 +30,11 @@
 
 <div align="center">
     <strong>HTML5</strong>
-    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gulp.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+            <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gulp.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
     <strong>SASS</strong>
 </div>
+
+<br/>
 
 ## PREREQUISITES
 Before you begin, make sure you have met the following requirements:
@@ -54,7 +56,7 @@ $ gulp
 
 Windows:
 ```
-git clone git@github.com:KevinJSS/Nucleus-eWallet.git
+git clone git@github.com:KevinJSS/Cafeteria_App.git
 
 npm install
 
